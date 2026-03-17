@@ -22,10 +22,10 @@ print('=' * 99)
 print(user_list[5])
 print('=' * 99)
 role_access = iam.create_access_key(
-    UserName=user_list[2]
+    UserName=user_list[10]
 )
 print(role_access['AccessKey']['AccessKeyId'])
-for accesskey1 in role_access['AccessKey']:
-    print(accesskey1['AccessKeyId'])
-print(role_access)
+# for accesskey1 in role_access['AccessKey']:
+#     print(accesskey1['AccessKeyId'])
+# print(role_access)
 
